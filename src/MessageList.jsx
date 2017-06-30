@@ -12,7 +12,7 @@ class MessageList extends Component {
       <main className="messages">
         { this.messages.map((message) => {
           return (
-            <Message key={message.id} username={message.username} content={message.content} />
+            <Message key={message.id} type={message.type} username={message.username} content={message.content} />
           );
         })}
       </main>
